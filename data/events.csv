@@ -1,0 +1,11 @@
+EventID,EventName,Date,StartTime,EndTime,Location,Department,Cost,StudentsReached,Latitude,Longitude,Requirements
+E001,TechFest Hackathon,2026-04-25,09:00,18:00,Main Auditorium,CS,50000,500,12.9716,77.5946,"Team: 2-4 | Knowledge: Python/JS | Bring: Laptop, Charger"
+E002,AI Workshop,2026-04-25,10:00,13:00,Lab Block A,CS,15000,80,12.9720,77.5950,"Team: Individual | Knowledge: Basic Math | Bring: Notebook"
+E003,Robotics Expo,2026-04-26,11:00,16:00,ECE Lab,ECE,25000,200,12.9710,77.5940,"Team: Any | Knowledge: None | Bring: Entry ID"
+E004,Cultural Night,2026-04-27,18:00,22:00,Open Grounds,ALL,40000,800,12.9725,77.5948,"Team: Any | Knowledge: None | Bring: University ID"
+E005,Career Fair,2026-04-28,09:00,17:00,Seminar Hall,ALL,30000,400,12.9718,77.5944,"Team: Individual | Knowledge: Resume Writing | Bring: Hardcopy Resumes"
+E006,Coding Contest,2026-04-25,14:00,17:00,CS Lab 2,CS,8000,100,12.9721,77.5942,"Team: Individual | Knowledge: Data Structures | Bring: Laptop"
+E007,Industrial Visit,2026-04-29,08:00,18:00,Offsite,ME,35000,60,12.9700,77.5930,"Team: Individual | Knowledge: Safety Basics | Bring: Formal Dress"
+E008,Paper Presentation,2026-04-26,10:00,14:00,Conference Hall,ALL,12000,150,12.9719,77.5947,"Team: 1-2 | Knowledge: Domain Research | Bring: USB with Presentation"
+E009,Startup Pitch,2026-04-27,14:00,18:00,Auditorium,ALL,20000,250,12.9716,77.5946,"Team: 1-3 | Knowledge: Business Plan | Bring: Pitch Deck"
+E010,Circuit Design Contest,2026-04-28,10:00,15:00,EEE Lab,EEE,10000,90,12.9715,77.5938,"Team: 2 | Knowledge: Digital Logic | Bring: Breadboard, Kit"

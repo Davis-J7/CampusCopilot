@@ -1,0 +1,21 @@
+StudentID,Name,Department,Year,FeesPaid,FeesDue
+S001,Aarav Sharma,CS,2,80000,0
+S002,Priya Patel,IT,3,75000,5000
+S003,Rohan Gupta,ECE,1,70000,0
+S004,Ananya Singh,ME,4,60000,10000
+S005,Vikram Reddy,CS,2,80000,0
+S006,Sneha Iyer,CSE,3,80000,0
+S007,Arjun Kumar,IT,1,75000,0
+S008,Divya Nair,ECE,2,70000,15000
+S009,Karan Joshi,ME,3,60000,0
+S010,Meera Pillai,CS,4,80000,0
+S011,Raj Malhotra,EEE,2,65000,5000
+S012,Kavya Menon,IT,3,75000,0
+S013,Aditya Rao,CS,1,80000,0
+S014,Ishita Shah,ECE,4,70000,0
+S015,Nikhil Verma,ME,2,60000,20000
+S016,Pooja Desai,CS,3,80000,0
+S017,Sanjay Mehta,IT,2,75000,0
+S018,Riya Kapoor,EEE,1,65000,0
+S019,Akash Bhatt,ECE,3,70000,0
+S020,Tanvi Jain,CS,4,80000,5000

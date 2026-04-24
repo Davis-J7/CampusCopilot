@@ -1,0 +1,15 @@
+Subject,Department,Date,StartTime,EndTime,Room
+Data Structures,CS,2026-05-01,10:00,13:00,H101
+Algorithms,CS,2026-05-03,10:00,13:00,H101
+Operating Systems,CS,2026-05-05,14:00,17:00,H102
+Database Systems,IT,2026-05-02,10:00,13:00,H201
+Computer Networks,IT,2026-05-04,10:00,13:00,H201
+Web Development,IT,2026-05-06,14:00,17:00,H202
+Digital Electronics,ECE,2026-05-01,14:00,17:00,H301
+Signal Processing,ECE,2026-05-03,14:00,17:00,H301
+VLSI Design,ECE,2026-05-05,10:00,13:00,H302
+Thermodynamics,ME,2026-05-02,14:00,17:00,H401
+Fluid Mechanics,ME,2026-05-04,14:00,17:00,H401
+Machine Design,ME,2026-05-06,10:00,13:00,H402
+Power Systems,EEE,2026-05-01,10:00,13:00,H501
+Control Systems,EEE,2026-05-03,10:00,13:00,H501
