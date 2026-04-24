@@ -1,2 +1,16 @@
 # Environment Files
 venv/
+.env
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Agent/Gemini files
+.gemini/
+
+# Output files (optional, but often excluded in repos)
+output/*.png
+output/*.html

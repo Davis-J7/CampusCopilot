@@ -32,11 +32,6 @@ def fees_distribution(students: List[Student]) -> Dict[str, float]:
     return distribution
 
 
-def fee_defaulters(students: List[Student]) -> List[Student]:
-    """Returns students who still owe fees. Filter + list comprehension."""
-    return [s for s in students if s.is_defaulter]
-
-
 def total_fees_collected(students: List[Student]) -> float:
     """sum() with a generator expression -- no intermediate list built."""
     return sum(s.fees_paid for s in students)

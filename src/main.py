@@ -29,7 +29,6 @@ from .algorithms import (
 )
 from .analysis import (
     department_student_count,
-    fee_defaulters,
     fees_distribution,
     total_fees_collected,
     total_fees_pending,
@@ -170,7 +169,6 @@ def build_handlers(
         filtered_students = [s for s in students if s.department == target_dept] if target_dept else students
         
         counts = department_student_count(filtered_students)
-        defaulters = fee_defaulters(filtered_students)
 
         title = f"STUDENT OVERVIEW ({target_dept})" if target_dept else "STUDENT OVERVIEW"
         lines = [_banner(title)]
@@ -181,14 +179,6 @@ def build_handlers(
             for dept, n in sorted(counts.items()):
                 lines.append(f"    {dept:>4}: {n}")
 
-        if defaulters:
-            lines.append(f"\n  Fee defaulters ({len(defaulters)}):")
-            for s in defaulters:
-                lines.append(f"    {s.student_id}  {s.name:20s}  "
-                             f"due = {_format_currency(s.fees_due)}")
-        else:
-            lines.append("\n  No fee defaulters. Great!")
-            
         return "\n".join(lines)
 
     # --------- map ---------
@@ -248,7 +238,7 @@ def build_handlers(
                 "    'show events'            -> list all events\n"
                 "    'department fees'        -> current and next semester fee structure\n"
                 "    'exam schedule'          -> exam timetable\n"
-                "    'show students'          -> enrollment + defaulters\n"
+                "    'show students'          -> enrollment overview\n"
                 "    'campus map'             -> interactive Folium map\n"
                 "    'optimize events'        -> run DSA recommendations\n"
                 "    'help'                   -> this menu\n"
@@ -289,8 +279,7 @@ def run() -> None:
         print(f"\n[ERROR] {exc}")
         sys.exit(1)
 
-    print(f"  Loaded {len(students)} students, {len(events)} events, "
-          f"{len(schedule_df)} exams.")
+    
     print("  Type 'help' for commands or 'quit' to exit.\n")
 
     handlers = build_handlers(students, events, schedule_df, dept_fees)

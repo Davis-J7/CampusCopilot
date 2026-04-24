@@ -29,7 +29,7 @@ INTENT_KEYWORDS: Dict[str, str] = {
     "events":        "event events fest workshop hackathon competition contest programs",
     "fees":          "fee fees tuition payment academic dues",
     "schedule":      "schedule exam exams timetable class classes test tests",
-    "students":      "student students enrolled enrollment defaulter defaulters pending",
+    "students":      "student students enrolled enrollment pending",
     "requirements":  "requirements prerequisite join criteria can i join need for joining",
     "map":           "map location where campus directions building",
     "optimize":      "optimize optimising best maximum plan recommend suggest",

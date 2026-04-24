@@ -211,9 +211,8 @@ Levenshtein's O(m·n) per unmatched token — capped by our `max_distance=2` bai
 
 **Q: Why keep finance as a DataFrame but students as a list of objects?**
 A: Finance needs heavy groupby/aggregation — pandas excels at that. Student
-records need domain methods like `is_defaulter` and `total_fees` — OOP
-expresses that cleanly. We use the right tool per job.
-
+    records need domain methods like `total_fees` — OOP
+    expresses that cleanly. We use the right tool per job.
 **Q: How do you handle missing data?**
 A: `data_loader.py` uses `fillna(0)` on numeric columns and `dropna` on
 critical string columns, plus a `FileNotFoundError` wrapper that surfaces a
@@ -232,11 +231,9 @@ critical if we demo in a cloud IDE or a locked-down lab machine.
 
 ## Key Insights the Project Surfaces
 
-1. **Department budget health** — at a glance you can see which departments
-   are overspending vs under-utilising their budgets.
-2. **Fee collection gaps** — defaulter list with exact pending amounts.
-3. **Event scheduling optimum** — most students currently double-book; our
+1. **Fee collection gaps** — total fees collected and pending amounts.
+2. **Event scheduling optimum** — most students currently double-book; our
    greedy scheduler shows the optimum non-overlapping plan.
-4. **Sponsorship ROI** — knapsack reveals the cost-per-student-reached
+3. **Sponsorship ROI** — knapsack reveals the cost-per-student-reached
    trade-off; the highest-reach event is not always the best sponsorship
    choice once its cost is factored in.
